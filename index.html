@@ -3,83 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
     <link rel="stylesheet" href="style.css">
-    <title>Image-Slider</title>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
-
-    <div class="container">
-        <span class="slider" id="slider1"></span>
-        <span class="slider" id="slider2"></span>
-        <span class="slider" id="slider3"></span>
-        <span class="slider" id="slider4"></span>
-        <span class="slider" id="slider5"></span>
-        <span class="slider" id="slider6"></span>
-        <span class="slider" id="slider7"></span>
-        <span class="slider" id="slider8"></span>
-         <span class="slider" id="slider9"></span>
-
-        <div class="imgContainer">
-
-
-          <div class="slide_div" id="slide_1">
-            <img src="https://cdn.ipaper.io/iPaper/Papers/e266fac6-3f88-4dbd-86e9-15656f402042/Pages/1/Zoom.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uaXBhcGVyLmlvL2lQYXBlci9QYXBlcnMvZTI2NmZhYzYtM2Y4OC00ZGJkLTg2ZTktMTU2NTZmNDAyMDQyL1BhZ2VzLyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3MTI0Mzg4NjF9fX1dfQ__&Signature=iiXGEyAlnxXdc4voU2sot3ibqbdve1BDnSknDXns0Tgbmci5y5pjQhWgxEX1C2UQxBTjTll3h0uFnAhTLp8dXL4~~afMx4f2qBH-sgbvCfKMAkhALNy0hkx3r5k4VmacBVeROb7gT5HOlcLDbGOcetA1PFpxq3CSRezSEsM6TTo_&Key-Pair-Id=APKAIPGQN6BDBMBZ2LCA" alt="" class="img" id="img1">
-            <a href="#slider1" class="button" id="button1"></a>
-           </div>
-
-           <div class="slide_div" id="slide_2">
-            <img src="https://cdn.ipaper.io/iPaper/Papers/e266fac6-3f88-4dbd-86e9-15656f402042/Pages/2/Zoom.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uaXBhcGVyLmlvL2lQYXBlci9QYXBlcnMvZTI2NmZhYzYtM2Y4OC00ZGJkLTg2ZTktMTU2NTZmNDAyMDQyL1BhZ2VzLyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3MTI0Mzg4NjF9fX1dfQ__&Signature=iiXGEyAlnxXdc4voU2sot3ibqbdve1BDnSknDXns0Tgbmci5y5pjQhWgxEX1C2UQxBTjTll3h0uFnAhTLp8dXL4~~afMx4f2qBH-sgbvCfKMAkhALNy0hkx3r5k4VmacBVeROb7gT5HOlcLDbGOcetA1PFpxq3CSRezSEsM6TTo_&Key-Pair-Id=APKAIPGQN6BDBMBZ2LCA" alt="" class="img" id="img2">
-            <a href="#slider2" class="button" id="button2"></a>
-           </div>
-
-
-           <div class="slide_div" id="slide_3">
-            <img src="https://cdn.ipaper.io/iPaper/Papers/e266fac6-3f88-4dbd-86e9-15656f402042/Pages/3/Zoom.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uaXBhcGVyLmlvL2lQYXBlci9QYXBlcnMvZTI2NmZhYzYtM2Y4OC00ZGJkLTg2ZTktMTU2NTZmNDAyMDQyL1BhZ2VzLyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3MTI0Mzg4NjF9fX1dfQ__&Signature=iiXGEyAlnxXdc4voU2sot3ibqbdve1BDnSknDXns0Tgbmci5y5pjQhWgxEX1C2UQxBTjTll3h0uFnAhTLp8dXL4~~afMx4f2qBH-sgbvCfKMAkhALNy0hkx3r5k4VmacBVeROb7gT5HOlcLDbGOcetA1PFpxq3CSRezSEsM6TTo_&Key-Pair-Id=APKAIPGQN6BDBMBZ2LCA" alt="" class="img" id="img3">
-            <a href="#slider3" class="button" id="button3"></a>
-           </div>
-
-
-           <div class="slide_div" id="slide_4">
-            <img src="https://cdn.ipaper.io/iPaper/Papers/e266fac6-3f88-4dbd-86e9-15656f402042/Pages/4/Zoom.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uaXBhcGVyLmlvL2lQYXBlci9QYXBlcnMvZTI2NmZhYzYtM2Y4OC00ZGJkLTg2ZTktMTU2NTZmNDAyMDQyL1BhZ2VzLyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3MTI0Mzg4NjF9fX1dfQ__&Signature=iiXGEyAlnxXdc4voU2sot3ibqbdve1BDnSknDXns0Tgbmci5y5pjQhWgxEX1C2UQxBTjTll3h0uFnAhTLp8dXL4~~afMx4f2qBH-sgbvCfKMAkhALNy0hkx3r5k4VmacBVeROb7gT5HOlcLDbGOcetA1PFpxq3CSRezSEsM6TTo_&Key-Pair-Id=APKAIPGQN6BDBMBZ2LCA" alt="" class="img" id="img4">
-            <a href="#slider4" class="button" id="button4"></a>
-           </div>
-
-           <div class="slide_div" id="slide_5">
-            <img src="https://cdn.ipaper.io/iPaper/Papers/e266fac6-3f88-4dbd-86e9-15656f402042/Pages/5/Zoom.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uaXBhcGVyLmlvL2lQYXBlci9QYXBlcnMvZTI2NmZhYzYtM2Y4OC00ZGJkLTg2ZTktMTU2NTZmNDAyMDQyL1BhZ2VzLyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3MTI0Mzg4NjF9fX1dfQ__&Signature=iiXGEyAlnxXdc4voU2sot3ibqbdve1BDnSknDXns0Tgbmci5y5pjQhWgxEX1C2UQxBTjTll3h0uFnAhTLp8dXL4~~afMx4f2qBH-sgbvCfKMAkhALNy0hkx3r5k4VmacBVeROb7gT5HOlcLDbGOcetA1PFpxq3CSRezSEsM6TTo_&Key-Pair-Id=APKAIPGQN6BDBMBZ2LCA" alt="" class="img" id="img5">
-            <a href="#slider5" class="button" id="button5"></a>
-           </div>
-
-
-           <div class="slide_div" id="slide_6">
-            <img src="https://cdn.ipaper.io/iPaper/Papers/e266fac6-3f88-4dbd-86e9-15656f402042/Pages/6/Zoom.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uaXBhcGVyLmlvL2lQYXBlci9QYXBlcnMvZTI2NmZhYzYtM2Y4OC00ZGJkLTg2ZTktMTU2NTZmNDAyMDQyL1BhZ2VzLyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3MTI0Mzg4NjF9fX1dfQ__&Signature=iiXGEyAlnxXdc4voU2sot3ibqbdve1BDnSknDXns0Tgbmci5y5pjQhWgxEX1C2UQxBTjTll3h0uFnAhTLp8dXL4~~afMx4f2qBH-sgbvCfKMAkhALNy0hkx3r5k4VmacBVeROb7gT5HOlcLDbGOcetA1PFpxq3CSRezSEsM6TTo_&Key-Pair-Id=APKAIPGQN6BDBMBZ2LCA" alt="" class="img" id="img6">
-            <a href="#slider6" class="button" id="button6"></a>
-           </div>
-
-
-           <div class="slide_div" id="slide_7">
-            <img src="https://cdn.ipaper.io/iPaper/Papers/e266fac6-3f88-4dbd-86e9-15656f402042/Pages/7/Zoom.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uaXBhcGVyLmlvL2lQYXBlci9QYXBlcnMvZTI2NmZhYzYtM2Y4OC00ZGJkLTg2ZTktMTU2NTZmNDAyMDQyL1BhZ2VzLyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3MTI0Mzg4NjF9fX1dfQ__&Signature=iiXGEyAlnxXdc4voU2sot3ibqbdve1BDnSknDXns0Tgbmci5y5pjQhWgxEX1C2UQxBTjTll3h0uFnAhTLp8dXL4~~afMx4f2qBH-sgbvCfKMAkhALNy0hkx3r5k4VmacBVeROb7gT5HOlcLDbGOcetA1PFpxq3CSRezSEsM6TTo_&Key-Pair-Id=APKAIPGQN6BDBMBZ2LCA" alt="" class="img" id="img7">
-            <a href="#slider7" class="button" id="button7"></a>
-           </div>
-
-            <div class="slide_div" id="slide_8">
-            <img src="https://cdn.ipaper.io/iPaper/Papers/e266fac6-3f88-4dbd-86e9-15656f402042/Pages/8/Zoom.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uaXBhcGVyLmlvL2lQYXBlci9QYXBlcnMvZTI2NmZhYzYtM2Y4OC00ZGJkLTg2ZTktMTU2NTZmNDAyMDQyL1BhZ2VzLyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3MTI0Mzg4NjF9fX1dfQ__&Signature=iiXGEyAlnxXdc4voU2sot3ibqbdve1BDnSknDXns0Tgbmci5y5pjQhWgxEX1C2UQxBTjTll3h0uFnAhTLp8dXL4~~afMx4f2qBH-sgbvCfKMAkhALNy0hkx3r5k4VmacBVeROb7gT5HOlcLDbGOcetA1PFpxq3CSRezSEsM6TTo_&Key-Pair-Id=APKAIPGQN6BDBMBZ2LCA" alt="" class="img" id="img8">
-            <a href="#slider8" class="button" id="button8"></a>
-           </div>
-
-
-             <div class="slide_div" id="slide_9">
-            <img src="https://cdn.ipaper.io/iPaper/Papers/e266fac6-3f88-4dbd-86e9-15656f402042/Pages/9/Zoom.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uaXBhcGVyLmlvL2lQYXBlci9QYXBlcnMvZTI2NmZhYzYtM2Y4OC00ZGJkLTg2ZTktMTU2NTZmNDAyMDQyL1BhZ2VzLyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3MTI0Mzg4NjF9fX1dfQ__&Signature=iiXGEyAlnxXdc4voU2sot3ibqbdve1BDnSknDXns0Tgbmci5y5pjQhWgxEX1C2UQxBTjTll3h0uFnAhTLp8dXL4~~afMx4f2qBH-sgbvCfKMAkhALNy0hkx3r5k4VmacBVeROb7gT5HOlcLDbGOcetA1PFpxq3CSRezSEsM6TTo_&Key-Pair-Id=APKAIPGQN6BDBMBZ2LCA" alt="" class="img" id="img9">
-            <a href="#slider9" class="button" id="button9"></a>
-           </div>
-           
-
+    <section>
+        <div class="buttons">
+          <input type="radio" name="radio-btn" id="radio1" class="button" onclick="changeSlide(0)" checked>
+          <input type="radio" name="radio-btn" id="radio2" class="button" onclick="changeSlide(1)">
+          <input type="radio" name="radio-btn" id="radio3" class="button" onclick="changeSlide(2)">
+          <input type="radio" name="radio-btn" id="radio4" class="button" onclick="changeSlide(3)">
         </div>
-        
-    </div>
-    
 
+        <img src="https://cdn.ipaper.io/iPaper/Papers/e266fac6-3f88-4dbd-86e9-15656f402042/Pages/1/Zoom.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uaXBhcGVyLmlvL2lQYXBlci9QYXBlcnMvZTI2NmZhYzYtM2Y4OC00ZGJkLTg2ZTktMTU2NTZmNDAyMDQyL1BhZ2VzLyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3MTI0Mzg4NjF9fX1dfQ__&Signature=iiXGEyAlnxXdc4voU2sot3ibqbdve1BDnSknDXns0Tgbmci5y5pjQhWgxEX1C2UQxBTjTll3h0uFnAhTLp8dXL4~~afMx4f2qBH-sgbvCfKMAkhALNy0hkx3r5k4VmacBVeROb7gT5HOlcLDbGOcetA1PFpxq3CSRezSEsM6TTo_&Key-Pair-Id=APKAIPGQN6BDBMBZ2LCA" alt="" class="slide">
+
+        <img src="https://cdn.ipaper.io/iPaper/Papers/e266fac6-3f88-4dbd-86e9-15656f402042/Pages/2/Zoom.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uaXBhcGVyLmlvL2lQYXBlci9QYXBlcnMvZTI2NmZhYzYtM2Y4OC00ZGJkLTg2ZTktMTU2NTZmNDAyMDQyL1BhZ2VzLyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3MTI0Mzg4NjF9fX1dfQ__&Signature=iiXGEyAlnxXdc4voU2sot3ibqbdve1BDnSknDXns0Tgbmci5y5pjQhWgxEX1C2UQxBTjTll3h0uFnAhTLp8dXL4~~afMx4f2qBH-sgbvCfKMAkhALNy0hkx3r5k4VmacBVeROb7gT5HOlcLDbGOcetA1PFpxq3CSRezSEsM6TTo_&Key-Pair-Id=APKAIPGQN6BDBMBZ2LCA" alt="" class="slide">
+
+        <img src="https://cdn.ipaper.io/iPaper/Papers/e266fac6-3f88-4dbd-86e9-15656f402042/Pages/3/Zoom.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uaXBhcGVyLmlvL2lQYXBlci9QYXBlcnMvZTI2NmZhYzYtM2Y4OC00ZGJkLTg2ZTktMTU2NTZmNDAyMDQyL1BhZ2VzLyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3MTI0Mzg4NjF9fX1dfQ__&Signature=iiXGEyAlnxXdc4voU2sot3ibqbdve1BDnSknDXns0Tgbmci5y5pjQhWgxEX1C2UQxBTjTll3h0uFnAhTLp8dXL4~~afMx4f2qBH-sgbvCfKMAkhALNy0hkx3r5k4VmacBVeROb7gT5HOlcLDbGOcetA1PFpxq3CSRezSEsM6TTo_&Key-Pair-Id=APKAIPGQN6BDBMBZ2LCA" alt="" class="slide">
+
+        <img src="https://cdn.ipaper.io/iPaper/Papers/e266fac6-3f88-4dbd-86e9-15656f402042/Pages/4/Zoom.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uaXBhcGVyLmlvL2lQYXBlci9QYXBlcnMvZTI2NmZhYzYtM2Y4OC00ZGJkLTg2ZTktMTU2NTZmNDAyMDQyL1BhZ2VzLyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3MTI0Mzg4NjF9fX1dfQ__&Signature=iiXGEyAlnxXdc4voU2sot3ibqbdve1BDnSknDXns0Tgbmci5y5pjQhWgxEX1C2UQxBTjTll3h0uFnAhTLp8dXL4~~afMx4f2qBH-sgbvCfKMAkhALNy0hkx3r5k4VmacBVeROb7gT5HOlcLDbGOcetA1PFpxq3CSRezSEsM6TTo_&Key-Pair-Id=APKAIPGQN6BDBMBZ2LCA" alt="" class="slide">
+
+        
+    </section>
+
+    <div class="nav">
+        <a class="side-button prev" onclick="goPrev()"><i class="fa-solid fa-circle-left"></i></a>
+        <a class="side-button next" onclick="goNext()"><i class="fa-solid fa-circle-right"></i></a>
+    </div>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
