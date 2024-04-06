@@ -164,7 +164,7 @@ img{
 }
 
 
-#slider8:target ~ .imgContainer{
+#slider9:target ~ .imgContainer{
     left: -100%;
 }
 
