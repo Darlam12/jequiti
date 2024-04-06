@@ -1,47 +1,40 @@
+let slider = document.querySelector('.slider .list');
+let items = document.querySelectorAll('.slider .list .item');
+let next = document.getElementById('next');
+let prev = document.getElementById('prev');
+let dots = document.querySelectorAll('.slider .dots li');
 
-const slides = document.querySelectorAll(".slide")
-const radioButton = document.querySelectorAll(".button")
+let lengthItems = items.length - 1;
+let active = 0;
+next.onclick = function(){
+    active = active + 1 <= lengthItems ? active + 1 : 0;
+    reloadSlider();
+}
+prev.onclick = function(){
+    active = active - 1 >= 0 ? active - 1 : lengthItems;
+    reloadSlider();
+}
+//let refreshInterval = setInterval(()=> {next.click()}, 3000);
+function reloadSlider(){
+    slider.style.left = -items[active].offsetLeft + 'px';
+    // 
+    let last_active_dot = document.querySelector('.slider .dots li.active');
+    last_active_dot.classList.remove('active');
+    dots[active].classList.add('active');
 
-var counter = 0;
+    clearInterval(refreshInterval);
+   // refreshInterval = setInterval(()=> {next.click()}, 3000);
 
-slides.forEach(
-    (slide, index) => {
-        slide.style.left = `${index * 100}%`
-    }
-)
-
-const goNext = () => {
-    counter++
-    slideImage()
+    
 }
 
-const goPrev = () => {
-    counter--
-    slideImage()
-}
-
-const slideImage = () => {
-    slides.forEach(
-        (slide) => {
-            counter <= slides.length - 1 ?
-            slide.style.transform = `translateX(-${counter * 100}%)` 
-            : counter = slides.length - 1
-        }
-    )
-
-    radioButton.forEach((radio, i) => {
-        radio.checked = i===counter
+dots.forEach((li, key) => {
+    li.addEventListener('click', ()=>{
+         active = key;
+         reloadSlider();
     })
-}
-
-const changeSlide = (slideNumber) => {
-    counter = slideNumber
-    slides.forEach(
-        (slide) => {
-            counter <= slides.length -1 ?
-            slide.style.transform = `translateX(-${counter * 100}%)` 
-            : counter = slides.length -1
-        }
-    )
-}
+})
+window.onresize = function(event) {
+    reloadSlider();
+};
 
