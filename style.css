@@ -4,25 +4,29 @@ background: pink;
 
 
 @media (max-width: @screen-xs-max) { 
-.selector-for-some-widget {
-  box-sizing: content-box;
+selector{
+  max-width: 100%; 
+  height: auto;
 }
  }
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
 
-.selector-for-some-widget {
-  box-sizing: content-box;
+selector{
+  max-width: 100%; 
+  height: auto;
+ 
 }
 }
 @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
-.selector-for-some-widget {
-  box-sizing: content-box;
+selector{
+   max-width: 100%; 
+  height: auto;
 }
 }
 @media (min-width: @screen-lg-min) {
-
-.selector-for-some-widget {
-  box-sizing: content-box;
+selector{
+   max-width: 100%; 
+  height: auto;
 }
 }
 
