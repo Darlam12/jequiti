@@ -1,40 +1,30 @@
-let slider = document.querySelector('.slider .list');
-let items = document.querySelectorAll('.slider .list .item');
-let next = document.getElementById('next');
-let prev = document.getElementById('prev');
-let dots = document.querySelectorAll('.slider .dots li');
+angular.module("listaTelefonica", ["ngMessages"]);
+angular.module("listaTelefonica").controller("listaTelefonicaCtrl", function ($scope, uppercaseFilter) {
+  
 
-let lengthItems = items.length - 1;
-let active = 0;
-next.onclick = function(){
-    active = active + 1 <= lengthItems ? active + 1 : 0;
+$scope.slider = document.querySelector('.slider .list');
+$scope.items = document.querySelectorAll('.slider .list .item');
+
+ //alert($scope.items.length);
+
+$scope.lengthItems = $scope.items.length;
+$scope.valor = 0;
+
+$scope.proximo = function(){
+      
+  $scope.valor = $scope.valor + 1 <= $scope.lengthItems ? $scope.valor + 1 : 0;
     reloadSlider();
 }
-prev.onclick = function(){
-    active = active - 1 >= 0 ? active - 1 : lengthItems;
+
+$scope.anterior = function(){
+    $scope.valor = $scope.valor - 1 >= 0 ? $scope.valor - 1 : $scope.lengthItems;
     reloadSlider();
 }
-//let refreshInterval = setInterval(()=> {next.click()}, 3000);
+
 function reloadSlider(){
-    slider.style.left = -items[active].offsetLeft + 'px';
-    // 
-    let last_active_dot = document.querySelector('.slider .dots li.active');
-    last_active_dot.classList.remove('active');
-    dots[active].classList.add('active');
-
-    clearInterval(refreshInterval);
-   // refreshInterval = setInterval(()=> {next.click()}, 3000);
-
-    
+$scope.slider.style.left = -$scope.items[$scope.valor].offsetLeft + 'px';
 }
 
-dots.forEach((li, key) => {
-    li.addEventListener('click', ()=>{
-         active = key;
-         reloadSlider();
-    })
-})
-window.onresize = function(event) {
-    reloadSlider();
-};
+});
+
 
