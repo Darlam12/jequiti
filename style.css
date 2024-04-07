@@ -22,13 +22,13 @@ background: pink;
     display: flex;
     transition: 1s;
 }
-/*.slider .list img{
+.slider .list img{
     width: 1300px;
     max-width: 100vw;
     height: 100%;
     object-fit: cover;
 
-}*/
+}
 .slider .buttons{
     position: absolute;
     top: 45%;
@@ -72,11 +72,11 @@ background: pink;
 }
 
 
-@media screen and (max-width: 768px){
+/*media screen and (max-width: 768px){
     .slider{
         height: 768px;
     }
-}
+}*/
 
 
 .whatsapp-link {
