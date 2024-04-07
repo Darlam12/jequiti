@@ -10,6 +10,15 @@ $scope.items = document.querySelectorAll('.slider .list .item');
 $scope.lengthItems = $scope.items.length;
 $scope.valor = 0;
 
+
+  $scope.textoWhatzap = null;
+
+$scope.codigo = "80703";
+$scope.descricao = "Claudia Leite Colônia Desodorante Feminina";
+
+$scope.textoWhatzap = "🙂 Oi gostei desse "+$scope.descricao+", código: "+$scope.codigo+" informe quantidade 👉🏻: ";
+
+
 $scope.proximo = function(){
       
   $scope.valor = $scope.valor + 1 <= $scope.lengthItems ? $scope.valor + 1 : 0;
