@@ -7,66 +7,59 @@
     <title>Jequiti-Tereza</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 
-  
       <script src="lib/angular/angular.js"></script>
       <script src="lib/angular/angular-messages.js"></script>
 
+<style>
+    .whatsapp-link {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 40px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 1px 1px 2px #888;
+      z-index: 1000;
+    }
+ 
+    .fa-whatsapp {
+      margin-top: 16px;
+    }
+  </style>
+    
 
       <script>
-            angular.module("listaTelefonica", ["ngMessages"]);
-            angular.module("listaTelefonica").controller("listaTelefonicaCtrl", function ($scope, uppercaseFilter) {
+angular.module("listaTelefonica", ["ngMessages"]);
+angular.module("listaTelefonica").controller("listaTelefonicaCtrl", function ($scope, uppercaseFilter) {
                
-                  /*$scope.contatos = [
-                        {cont: 1}, {cont: 2}
-                        
-                  ];*/
-
-
-
-/*
-var count = ['1','2','3','4'];
-var container = document.getElementById('itemFlag');
-for(var i = 0; i < count.length; i++){
-    
-    container.innerHTML+='<div class="itemFlag"><img src="https://cdn.ipaper.io/iPaper/Papers/e266fac6-3f88-4dbd-86e9-15656f402042/Pages/'+count[i]+'/Zoom.jpg?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uaXBhcGVyLmlvL2lQYXBlci9QYXBlcnMvZTI2NmZhYzYtM2Y4OC00ZGJkLTg2ZTktMTU2NTZmNDAyMDQyL1BhZ2VzLyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3MTI0Mzg4NjF9fX1dfQ__&Signature=iiXGEyAlnxXdc4voU2sot3ibqbdve1BDnSknDXns0Tgbmci5y5pjQhWgxEX1C2UQxBTjTll3h0uFnAhTLp8dXL4~~afMx4f2qBH-sgbvCfKMAkhALNy0hkx3r5k4VmacBVeROb7gT5HOlcLDbGOcetA1PFpxq3CSRezSEsM6TTo_&Key-Pair-Id=APKAIPGQN6BDBMBZ2LCA" alt=""></div>';
- 
-}
-*/
-
 let slider = document.querySelector('.slider .list');
 let items = document.querySelectorAll('.slider .list .item');
-
-
 
 let lengthItems = items.length;
 let valor = 0;
 
-
 $scope.proximo = function(){
-      
-  valor = valor + 1 <= lengthItems ? valor + 1 : 0;
-    reloadSlider();
+valor = valor + 1 <= lengthItems ? valor + 1 : 0;
+reloadSlider();
 }
-
 $scope.anterior = function(){
-    valor = valor - 1 >= 0 ? valor - 1 : lengthItems;
-    reloadSlider();
+valor = valor - 1 >= 0 ? valor - 1 : lengthItems;
+reloadSlider();
 }
-
-
-
 function reloadSlider(){
-   
-    slider.style.left = -items[valor].offsetLeft + 'px';
+slider.style.left = -items[valor].offsetLeft + 'px';
 
 }
 
 
 });
-
-
-      </script>
+</script>
 
 
 
