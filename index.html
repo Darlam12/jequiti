@@ -19,14 +19,11 @@
 </head>
 
 <body ng-controller="listaTelefonicaCtrl">
-         
-
-
-
-      <section>
+        
+<section>
     
-    <div class="slider">
-        <div class="list">
+<div class="slider">
+    <div class="list">
 
 
 
@@ -402,6 +399,10 @@
 
 <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5591982341594&text={{textoWhatzap}}" target="_blank">
     <i class="fa fa-whatsapp"></i>
+  </a>
+    
+     <a ng-if="getPagina == 0" class="pdf-link" href="pdf_05_24.pdf" style="padding-top: 13px;" download target="_blank">
+    <i class="fa fa-file-pdf-o"></i>
   </a>
     
 </body>
