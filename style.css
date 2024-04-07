@@ -101,7 +101,7 @@ selector{
 
 @media screen and (max-width: 768px){
     .slider{
-        height: 800px;
+        height: 768px;
     }
 }
 
