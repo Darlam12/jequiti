@@ -11,19 +11,16 @@
 
       <script src="lib/angular/angular.js"></script>
       <script src="lib/angular/angular-messages.js"></script>
-
       <script src="script.js"></script>
-
-
 
 </head>
 
 <body ng-controller="listaTelefonicaCtrl">
-        
+         
 <section>
     
-<div class="slider">
-    <div class="list">
+    <div class="slider">
+        <div class="list">
 
 
 
@@ -396,14 +393,18 @@
 
     </section>
 
-
-<a  ng-if="getPagina > 0" class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5591982341594&text={{textoWhatzap}}" target="_blank">
+    
+    <a ng-if="getPagina > 0" class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5591982341594&text={{textoWhatzap}}" target="_blank">
     <i class="fa fa-whatsapp"></i>
   </a>
-    
-     <a ng-if="getPagina == 0" class="pdf-link" href="pdf_05_24.pdf" style="padding-top: 13px;" download target="_blank">
+
+
+ <a ng-if="getPagina == 0" class="pdf-link" href="pdf_05_24.pdf" style="padding-top: 13px;" download target="_blank">
     <i class="fa fa-file-pdf-o"></i>
   </a>
+
+<!--<a href="pdf_05_24.pdf" download><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>-->
+
     
 </body>
 </html>
